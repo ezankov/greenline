@@ -287,7 +287,7 @@
 </footer>
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -308,7 +308,7 @@
 
     // Scrolls to the selected menu item on the page
     $(function () {
-        $('a[href*=#]:not([href=#])').click(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
