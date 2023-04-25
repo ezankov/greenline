@@ -212,7 +212,8 @@
             background: none !important
         }</style>
         <a class="google-map-code" href="https://wordpress-hosting.me" id="get-map-data">wordpress-hosting.me</a></div>
-    <script type="text/javascript"> function init_map() {
+    <script type="text/javascript"> 
+    function init_map() {
         var myOptions = {
             zoom: 14,
             scrollwheel: false,
@@ -227,7 +228,8 @@
         });
         infowindow.open(map, marker);
     }
-    google.maps.event.addDomListener(window, 'load', init_map);</script>
+    window.addEventListener('load', init_map);
+    </script>
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 text-center">
             <h4><strong>Greenline Textilreinigung</strong></h4>
