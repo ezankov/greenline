@@ -116,7 +116,7 @@ cc.run({
         'de': {
             consent_modal: {
                 title: 'Wir benutzen Cookies!',
-                description: 'Diese Website verwendet Cookies, um die Websitenavigation zu verbessern, die Websitenutzung zu analysieren und unsere Marketingbemühungen zu unterstützen. <button type="button" data-cc="c-settings" class="cc-link">Cookie-Einstellungen</button>',
+                description: 'Diese Website verwendet Cookies, um die Websitenavigation zu verbessern, die Websitenutzung zu analysieren und unsere Marketingbem&uuml;hungen zu unterst&uuml;tzen. <button type="button" data-cc="c-settings" class="cc-link">Cookie-Einstellungen</button>',
                 primary_btn: {
                     text: 'Alle akzeptieren',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
@@ -140,11 +140,11 @@ cc.run({
                 ],
                 blocks: [
                     {
-                        title: 'Cookie-Nutzung 📢',
-                        description: 'Ich verwende Cookies, um die grundlegenden Funktionen der Website zu gewährleisten und um Ihr Online-Erlebnis zu verbessern. Sie können für jede Kategorie wählen, ob Sie sich ein- oder austragen möchten. Für weitere Einzelheiten zu Cookies und anderen sensiblen Daten lesen Sie bitte die vollständige <a href="#privacy" class="cc-link">Datenschutzerklärung</a>.'
+                        title: 'Cookie-Nutzung',
+                        description: 'Wir verwended Cookies, um die grundlegenden Funktionen der Website zu gew&auml;hrleisten und um Ihr Online-Erlebnis zu verbessern. Sie k&ouml;nnen f&uuml;r jede Kategorie w&auml;hlen, ob Sie sich ein- oder austragen m&ouml;chten. F&uuml;r weitere Einzelheiten zu Cookies und anderen sensiblen Daten lesen Sie bitte die vollst&auml;ndige <a href="#privacy" class="cc-link">Datenschutzerkl&auml;rung</a>.'
                     }, {
                         title: 'Unbedingt erforderliche Cookies',
-                        description: 'Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich. Ohne diese Cookies würde die Website nicht richtig funktionieren',
+                        description: 'Diese Cookies sind f&uuml;r das ordnungsgem&auml;ße Funktionieren der Website unerl&auml;sslich. Ohne diese Cookies w&uuml;rde die Website nicht richtig funktionieren',
                         toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -152,15 +152,15 @@ cc.run({
                         }
                     }, {
                         title: 'Leistungs- und Analyse-Cookies',
-                        description: 'Sammeln Informationen über das Verhalten der Nutzer, wie z.B. die Dauer und Häufigkeit von aufgerufenen Unterseiten oder die Reihenfolge besuchter Seiten. Diese Cookies sind dazu da, um die Hauptinteressen des Nutzers zu ermitteln.',
+                        description: 'Sammeln Informationen &uuml;ber das Verhalten der Nutzer, wie z.B. die Dauer und H&auml;ufigkeit von aufgerufenen Unterseiten oder die Reihenfolge besuchter Seiten. Diese Cookies sind dazu da, um die Hauptinteressen des Nutzers zu ermitteln.',
                         toggle: {
                             value: 'analytics',     // your cookie category
                             enabled: false,
                             readonly: false
                         }
                     }, {
-                        title: 'Cookies für Werbung',
-                        description: 'Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht und welche Links Sie angeklickt haben. Alle Daten sind anonymisiert und können nicht verwendet werden, um Sie zu identifizieren.',
+                        title: 'Cookies f&uuml;r Werbung',
+                        description: 'Diese Cookies sammeln Informationen dar&uuml;ber, wie Sie die Website nutzen, welche Seiten Sie besucht und welche Links Sie angeklickt haben. Alle Daten sind anonymisiert und k&ouml;nnen nicht verwendet werden, um Sie zu identifizieren.',
                         toggle: {
                             value: 'targeting',
                             enabled: false,
