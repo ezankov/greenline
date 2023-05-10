@@ -276,13 +276,32 @@
                     center: new google.maps.LatLng(48.1640005, 11.574154799999974),
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
-                map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-                marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(48.1640005, 11.574154799999974) });
-                infowindow = new google.maps.InfoWindow({ content: "<b>Greenline Textilreinigung</b><br/>Belgradstrasse 35<br/>80796 M&uuml;nchen" });
-                google.maps.event.addListener(marker, "click", function () {
-                    infowindow.open(map, marker);
-                });
-                infowindow.open(map, marker);
+                var locations = [
+                    ["<b>Greenline Textilreinigung</b><br/>Fallmerayerstraße 1<br/>80796 M&uuml;nchen", 48.160723968169286, 11.572940431780722, 2],
+                    ["<b>Greenline Textilreinigung</b><br/>Belgradstrasse 35<br/>80796 M&uuml;nchen", 48.1640005, 11.574154799999974, 1]
+                ];
+                var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                var infowindow = new google.maps.InfoWindow();
+                var marker, i;
+                
+                for (i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({ 
+                        map: map, 
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]) 
+                    });
+                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                        }
+                    })(marker, i));
+                }
+                // marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(48.1640005, 11.574154799999974) });
+                // infowindow = new google.maps.InfoWindow({ content: "<b>Greenline Textilreinigung</b><br/>Belgradstrasse 35<br/>80796 M&uuml;nchen" });
+                // google.maps.event.addListener(marker, "click", function () {
+                //     infowindow.open(map, marker);
+                // });
+                // infowindow.open(map, marker);
             }
             window.addEventListener('load', init_map);
         </script>
