@@ -436,7 +436,7 @@
                 </p>
 
                 <p class="text-muted">
-                    Copyright &copy; Greenline 2023
+                    Copyright &copy; Greenline <span id="currentYear"></span>
                 </p>
             </div>
         </div>
@@ -500,6 +500,17 @@
 
         ga('create', 'UA-59982726-1', 'auto');
         ga('send', 'pageview');
+    </script>
+
+    <!-- Calculate current year -->
+    <script>
+        function getCurrentYear() {
+            const currentDate = new Date();
+            return currentDate.getFullYear();
+        }
+
+        // Update the copyright year
+        document.getElementById("currentYear").textContent = getCurrentYear();
     </script>
 
 </body>
