@@ -174,6 +174,51 @@ hr.small {
     padding: 50px 0;
 }
 
+/* Private Services */
+
+.private {
+    padding: 50px 0;
+    background-color: #398439;
+}
+
+.private-table.table {
+    border-spacing: 0 15px;
+}
+
+.private-table.table > tbody > tr {
+    border: solid white 1px;
+    font-size: 20px;
+    height: 60px;
+}
+
+.private-table.table > tbody > tr > td:nth-child(n+2) {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.private-table.table > tbody > tr > td:first-child {
+    text-align: left;
+}
+
+.private-table.table > tbody > tr:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+/* Business Services */
+
+.business {
+    padding: 50px 0;
+    background-color: #428bca;
+}
+
+.business-table.table > tbody > tr {
+    height: 20px;
+}
+.business-table.table > tbody > tr:nth-child(even) {
+    background-color: #428bca;
+}
+
 .service-item {
     margin-bottom: 30px;
 }
