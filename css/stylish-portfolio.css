@@ -174,6 +174,12 @@ hr.small {
     padding: 50px 0;
 }
 
+.rounded-table {
+    border-radius: 10px; /* adjust this to suit your needs */
+    overflow: hidden; /* this makes sure the table adheres to the border radius of parent */
+    border: solid white 1px;
+}
+
 /* Private Services */
 
 .private {
@@ -186,7 +192,6 @@ hr.small {
 }
 
 .private-table.table > tbody > tr {
-    border: solid white 1px;
     font-size: 20px;
     height: 60px;
 }
@@ -203,6 +208,14 @@ hr.small {
 .private-table.table > tbody > tr:nth-child(odd) {
     background-color: white;
     color: black;
+}
+
+.private-table.table > tbody > tr:first-of-type {
+    border-bottom-left-radius: 12px;
+}
+
+.private-table.table > tbody > tr:last-of-type {
+    border-bottom-right-radius: 12px;
 }
 
 /* Business Services */
